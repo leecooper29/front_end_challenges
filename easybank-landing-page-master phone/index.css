@@ -1,0 +1,347 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 18px;
+      font-family: "Public Sans", sans-serif;
+      height: 100vh;
+}
+
+header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      z-index: 1000;
+      position: relative;
+      background-color: white;
+}
+
+h1 {
+      padding-bottom: 1rem;
+      font-weight: 300;
+      font-size: 55px;
+}
+
+h2 {
+      padding-bottom: 1rem;
+      font-weight: 300;
+      font-size: 40px;
+}
+
+h3 {
+      padding-bottom: 1rem;
+      font-weight: 300;
+}
+
+h4 {
+      padding-bottom: 2.5rem;
+      font-weight: 300;
+      font-size: 45px;
+}
+
+h5 {
+      padding-top: 1rem;
+      margin-bottom: 0.5rem;
+      font-size: 12px;
+      font-weight: 300;
+      
+}
+
+h6 {
+      font-size: 18px;
+      padding-bottom: 0.5rem;
+}
+
+.nav-left {
+      margin: 1rem;
+      margin-left: 10rem;
+
+}
+
+.nav-bar  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      margin: 1rem;
+}
+
+.nav-bar li {
+      font-weight: 100;
+      padding-left: 1rem;
+      font-size: 16px;
+      padding-bottom: 1rem;
+}
+
+.nav-bar li:hover {
+
+      border-bottom: 3px solid cadetblue;
+}
+
+.request {
+      margin: 1rem 10rem 1rem 1rem ;
+      padding: 0.5rem;
+      width: 120px;
+      color: white;
+      border-radius: 50px;
+     border: none;
+}
+
+.btn {
+      width: 120px;
+      padding: 0.5rem;
+      color: white;
+      border-radius: 50px;
+      border: none;
+}
+
+.linear {
+      background: rgb(49,211,92);
+      background: linear-gradient(90deg, rgba(49,211,92,1) 0%, rgba(43,183,218,1) 100%);
+}
+
+.generation-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      background-image: url(./images/bg-intro-desktop.svg);
+      background-repeat: no-repeat; 
+      background-position: 43rem -16rem;
+      max-height: 44rem;
+      max-width: 100%;
+}
+
+.container-left {
+      display: flex;
+      flex-direction: column;
+      margin: 10rem;
+}
+
+.container-left > p {
+      padding-bottom: 2rem;
+      font-weight: 100;
+      width: 450px;
+      line-height: 1.5rem;
+}
+
+button {
+      width: 150px;
+      border-radius: 50px;
+      padding: 0.3rem;
+}
+
+.container-right img {
+      position: relative;
+      top: -7rem;
+      right: -16rem;
+      z-index: 999;
+}
+
+.choice-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 80vh;
+      background-color: hsl(220, 16%, 96%);
+     
+}
+
+.place {
+      margin-left: 10rem;
+}
+
+.place > p{
+      width: 600px;
+      font-weight: 100;
+}
+
+.choice-items > p {
+      margin-bottom: 4rem;
+      width: 650px;
+}
+
+.choice-container > p {
+      margin-bottom: 4rem;
+      width: 650px;
+      font-weight: 100;
+}
+
+.banking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin-left: 10rem;
+
+      margin-top: 4rem;
+}
+
+.grid-item {
+      width: 300px;
+      padding-right: 0.25rem;
+}
+
+.grid-item > p {
+      line-height: 1.5rem;
+      font-weight: 100;
+
+}
+
+.grid-header {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+}
+
+.grid-header > img {
+      margin-bottom: 2rem;
+}
+
+.articles {
+      display: flex;
+      flex-direction: column;
+ 
+}
+
+.articles-container {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: center;
+      margin: 10rem 10rem;
+      
+}
+
+.article-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.article-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 2rem;
+}
+
+.article-text {
+      padding-left: 1rem;
+
+}
+
+.article-text > p {
+      font-size: 14px;
+      font-weight: 100;
+}
+
+h6:hover {
+      color: #31d35c;
+}
+
+.footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 20vh;
+      background-color: hsl(233, 26%, 24%);
+      color: white;
+}
+
+.footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 2fr;
+      color: white;
+      margin-left: 10rem;
+      margin-right: 10rem;
+}
+
+
+.footer-item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1rem;
+      color: white;
+
+}
+
+.logo > img {
+      color: white;
+      margin-bottom: 3rem;
+}
+
+.socials > img {
+      margin: 0 0.2rem;
+}
+
+
+.socials:hover {
+      color: #31d35c;
+}
+     
+
+.footer-item > p {
+      margin-bottom: 1rem;
+}
+
+.footer-item > p:hover {
+      color: #31d35c;
+}
+
+.footer-item, .align-right {
+      display: flex;
+      flex-direction: column;
+}
+
+.f-content {      
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-end;
+      align-items: end;
+}    
+ 
+.f-socials  .logo {
+      padding-bottom: 3.5rem;
+}
+
+.f-content > p {      
+    padding-top: 1rem;
+    font-weight: 100;
+    text-align: right;
+    color:  rgb(192, 188, 188);
+}     
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+}
+
+.attribution a {
+        color: hsl(228, 45%, 44%);
+}
+
+/* make sure that you use as little code as possible with the media quries to ensure clean code (also with html css)*/
+
+@media screen and (max-width: 375px) {
+
+      main {
+
+      }
+
+      header {
+            width: 100%;
+            /* background-color: gray; */
+      }
+
+      .nav-left > img {
+        
+      }
+
+      .nav-bar {
+            font-size: 25px;
+            width: 75%;
+      }
+      
+}
+

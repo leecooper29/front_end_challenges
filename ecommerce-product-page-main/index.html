@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="./index.js"></script>
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./index.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-header">
+      <img src="./images/icon-menu.svg" alt="" style="display: none;">
+      <img src="./images/logo.svg" alt="">
+      <nav>
+        <ul  class="nav-list">
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="user-item">
+      <img src="./images/icon-cart.svg" alt="" class="cart" id="showDialog" onclick="showMenu()">
+      <!-- only part of the project that I did not add was the cart functionality -->
+      <!-- <dialog open="" id="showDialog">
+        <p>Cart</p>
+      </dialog> -->
+      <img src="./images/image-avatar.png" alt="" class="avatar">
+    </div>
+    <!-- hover method to show cart? -->
+  </header>
+  <section id="product-grid">
+    <div class="sneaker-grid">
+      <div class="grid-item product"  >
+        <img src="./images/image-product-1.jpg" alt="" height="380px" class="main-product" id="myBtn">
+        <div class="showcase">
+          <div class="showcase-item">
+            <img src="./images/image-product-1.jpg" alt="" height="80px" class="display">
+          </div>
+          <div class="showcase-item">
+            <img src="./images/image-product-2.jpg" alt="" height="80px" class="display">
+          </div>
+          <div class="showcase-item">
+            <img src="./images/image-product-3.jpg" alt="" height="80px" class="display">
+          </div>
+          <div class="showcase-item">
+            <img src="./images/image-product-4.jpg" alt="" height="80px" class="display">
+          </div>
+        </div>
+      </div>
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-item">
+            <div class="close-item">
+              &nbsp;
+            <span class="close">&times;</span>
+          </div>
+            <img src="./images/image-product-1.jpg" alt="" height="380px" class="main-product" >
+            <div class="showcase">
+              <div class="showcase-item">
+                <img src="./images/image-product-1.jpg" alt="" height="80px" class="display">
+              </div>
+              <div class="showcase-item">
+                <img src="./images/image-product-2.jpg" alt="" height="80px" class="display">
+              </div>
+              <div class="showcase-item">
+                <img src="./images/image-product-3.jpg" alt="" height="80px" class="display">
+              </div>
+              <div class="showcase-item">
+                <img src="./images/image-product-4.jpg" alt="" height="80px" class="display">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <div class="product-info">
+      <h1>Sneaker Company</h1>
+      <h2>Fall Limited Edition<br>Sneakers</h2>
+      <p>
+      These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </p>
+    <div class="price">
+      <p>$125.00</p>
+    <span>50%</span>
+    </div>
+      <span class="strike">$250.00</span>
+      <div class="btn-flex">
+      <div class="quantity">
+        <div class="less" onclick="remove()">
+          <img src="./images/icon-minus.svg" alt="">
+        </div>
+          <span id="num">0</span>
+        <div class="more" onclick="add()">
+          <img src="./images/icon-plus.svg" alt="">
+        </div>
+      </div>
+      <button class="primary-btn">
+        <img src="./images/icon-cart.svg" alt="" class="cart" onclick="addToCart()">
+        Add to cart</button>
+    </div>
+  </div>
+</div>
+</section>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
