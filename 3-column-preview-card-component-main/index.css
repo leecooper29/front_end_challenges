@@ -1,0 +1,91 @@
+
+body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-size: 15px;
+      background-color: hsla(0, 0%, 100%, 0.75);
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+.three-card-container {
+      display: flex;
+      align-items: center;
+      width: 50%;
+}
+
+.three-card {
+      display: flex;
+      justify-content: center;
+
+}
+
+h1 {
+      margin: 1rem 0 0 0;
+      font-family: "Big Shoulders Display", sans-serif;
+      color: hsla(0, 0%, 100%, 0.75);
+}
+
+.vehicle-desc {
+      font-size: 12px;
+      font-weight: 400;
+      padding-top: 1rem;
+      padding-bottom: 24px;
+      font-family:  "Lexend Deca", sans-serif;;
+      color: hsla(0, 0%, 100%, 0.75);
+}
+
+.flex-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+}
+
+.sedans{
+      background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+      background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+      background-color: hsl(179, 100%, 13%);
+}
+
+.learn-orange {
+      color:  hsl(31, 77%, 52%);;;
+}
+
+.learn-teal {
+      color: hsl(184, 100%, 22%);;
+}
+
+.learn-dark {
+      color:  hsl(179, 100%, 13%);;
+}
+
+.btn {
+      margin: 0;
+      border-radius: 20px;
+      padding: 0.5rem;
+      white-space: nowrap;
+      border: none;
+}
+
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
