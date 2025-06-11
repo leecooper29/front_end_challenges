@@ -1,0 +1,312 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 18px;
+      margin: 1rem;
+}
+
+header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      background-color: lightblue;
+      background-image: url(./images/desktop/image-header.jpg);
+      background-size: cover;
+      height: 100vh;
+}
+
+.logo-nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem;
+      min-width: 100%;
+}
+
+.bg-image {
+      height: 5rem;
+      width: 5rem ;
+}
+
+/* h1 and arrow in header */
+
+h1 {
+      color: white;
+}
+
+h2 {
+      font-family: "Fraunces", serif;
+      font-size: 45px;
+      font-weight: 700;
+      color:  hsl(167, 40%, 24%);
+      margin-bottom: 1rem;
+}
+
+h4 {
+      font-family: "Fraunces", serif;
+      font-size: 45px;
+      font-weight: 700;
+      color: hsl(198, 62%, 26%);
+      margin-bottom: 1rem;
+}
+
+h3 {
+      font-size: 45px;
+      font-family: "Barlow", sans-serif;
+      color: hsl(198, 62%, 26%);
+      margin-bottom: 2rem;
+}
+
+h5 {
+      text-align: center;
+      margin: 1rem;
+      margin-top: 2rem;
+      font-size: 25px;
+      letter-spacing: 0.25rem;
+}
+
+.title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.logo {
+      background-image: url(./images/logo.svg);
+      background-repeat: no-repeat;
+}
+
+nav > ul {
+      display: flex;
+      list-style: none;
+}
+nav > ul li {
+      padding-left: 1rem;
+}
+
+.white-bg {
+      border-radius: 20px;
+      color: white;
+}
+
+.white-bg:hover {
+      background-color: white;
+      color: black;
+}
+
+.transform-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
+/* each image has its own fixed width */
+
+.col-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 6rem;
+}
+
+.col-3 > p {
+      font-family: "Barlow", sans-serif;
+      line-height: 1.5rem;
+}
+
+span {
+      margin-top: 1rem;
+      font-family: "Fraunces", serif;
+      font-weight: 700px;
+      text-decoration: underline;
+}
+
+.yellow {
+      text-decoration: underline;
+}
+
+.egg-bg {
+      background-image: url(./images/desktop///image-transform.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.cup-bg {
+      background-image: url(./images/desktop/image-stand-out.jpg);
+      background-repeat: no-repeat;
+}
+
+
+.cherry-bg {
+      background-image: url(./images/desktop/image-graphic-design.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.orange-grid {
+      background-image: url(./images/desktop/image-photography.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+
+.justify-bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+}
+
+.review-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+}
+
+.review {
+      display: flex;
+      justify-content: center;
+}
+
+.test {
+      text-align: center;
+}
+
+.profile {
+      background-repeat: no-repeat;
+      height: 80px;
+      width: 80px;
+      background-size: 20px;
+      border-radius: 50%;
+      margin-bottom: 2rem;
+}
+
+.profile-comment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}     
+
+.profile-comment > p {
+      margin-bottom: 2rem;
+      width: 300px;
+}
+
+.name {
+      font-weight: bold;
+      font-family: "Barlow", sans-serif;
+}
+
+.food-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      height: 40vh;
+}
+
+.food-item {
+
+}
+
+.milk {
+      background-image: url(./images/mobile/image-gallery-milkbottles.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.orange3 {
+      background-image: url(./images/mobile/image-gallery-orange.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.cone {
+      background-image: url(./images/mobile/image-gallery-cone.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+
+}
+
+.sugar-blocks {
+      background-image: url(./images/mobile/image-gallery-sugar-cubes.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.footer-logo {
+      margin-top: 2rem;
+}
+
+footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color:  hsl(168, 34%, 41%);
+      height: 30vh;
+}
+
+.footer-items {
+      display: flex;
+}
+
+.footer-items:hover {
+      color: white;
+}
+
+.footer-items > p {
+      padding: 1rem;
+}
+
+.sm-links > img {
+      padding: 0.8rem;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+ /* displays site properly based on user's device  */
+
+@media screen and (max-width: 375px) {
+      body {      
+            margin: 0;
+      }
+
+      .header {
+            display: flex;
+      }
+
+      .transform-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+
+      .transform-grid:nth-child(1) {
+            display: flex;
+            flex-direction: row-reverse;
+      }
+
+      .col-3 {
+            padding: 1rem;
+      }
+
+      .egg-bg {
+      }
+
+      .review-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+
+}

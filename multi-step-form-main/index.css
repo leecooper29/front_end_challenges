@@ -1,0 +1,329 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      font-family: "Rubik", sans-serif;
+      background-color: hsl(206, 49%, 84%);
+      height: 100vh;
+}
+
+h1 {
+      margin-bottom: 0.5rem;
+}
+
+h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+}
+
+.main-cont {
+      display: flex;
+      background-color: white;
+      padding: 1rem;
+      border-radius: 10px;
+}
+
+.main-form {
+      padding-left: 2rem;
+}
+
+.main-form>p {
+      margin-bottom: 1rem;
+}
+
+#textDesc {
+      margin-bottom: 1rem;
+}
+
+.text {
+      text-align: center;
+}
+
+.stepthree {
+      padding-left: 2rem;
+}
+
+.stepfour {
+      padding-left: 2rem;
+}
+
+.stepfive {
+      padding-left: 2rem;
+      text-align: center;
+      margin: 4rem 0;
+}
+
+.stepfive>p {
+      text-align: center;
+      width: 440px;
+
+}
+
+.service {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem;
+      border: 1px solid black;
+      margin-bottom: 1rem;
+}
+
+.service:hover {
+      border: 1px solid lightblue;
+}
+
+.last {
+      margin-bottom: 2rem;
+}
+
+.service-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+/* border added when the checkbox is selected */
+.border {
+      border: 1px solid red;
+}
+
+.form-cont {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      margin: 1rem;
+}
+
+form {
+      margin-bottom: 2rem;
+}
+
+.ex-top {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+}
+
+.side-bar {
+      background-image: url(./assets/images/bg-sidebar-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 196px;
+      padding: 0.5rem;
+      color: white;
+}
+
+.form-col {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+}
+
+input {
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: 1px solid grey;
+}
+
+.next {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.primary-btn {
+      padding: 0.5rem;
+      background-color: blue;
+      color: white;
+}
+
+.blue {
+      color: blue;
+      font-weight: bold;
+}
+
+.steps {
+      display: flex;
+      align-items: center;
+      /* flex-direction: column; */
+      margin-bottom: 1rem;
+      cursor: pointer;
+}
+
+.step {
+      display: flex;
+      flex-direction: column;
+      padding-left: 0.7rem;
+}
+
+.between {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.error-message {
+      border: 2px solid red;
+}
+
+.error-message {
+      border: 2px solid red;
+      color: red;
+}
+
+.hide {
+      display: none;
+}
+
+.hiding {
+      display: none;
+}
+
+.monthFree {
+      font-size: 14px;
+      margin: 0.rem;
+}
+
+#error,
+#name-error,
+#email-error,
+#phone-error {
+      color: red;
+}
+
+/* index.css */
+.show-flex {
+      display: flex !important;
+}
+
+.show {
+      display: block;
+}
+
+.steptwo {
+      padding-left: 2rem;
+}
+
+.backbtn {
+      background-color: white;
+      border: none;
+}
+
+#year {
+      font-size: 14px;
+      margin-top: 0.5rem;
+}
+
+/* handy for flex layouts */
+
+.next-step {
+      color: black;
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 50%;
+}
+
+/* .next-step:hover {
+      background-color: hsl(206, 94%, 87%);
+} */
+
+.plan-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+}
+
+.select-plan {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid grey;
+      border-radius: 4px;
+      padding: 1rem;
+}
+
+.select-plan:hover {
+      border: 1px solid hsl(243, 100%, 62%);
+}
+
+.select-plan>img {
+      margin-bottom: 0.5rem;
+}
+
+.month-year {
+      margin-bottom: 2rem;
+}
+
+.toggle {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+}
+
+.main-item {
+      padding-left: 2rem;
+}
+
+.item-container {
+      margin-bottom: 2rem;
+}
+
+.item {
+      display: flex;
+      margin-bottom: 1rem;
+      justify-content: space-between;
+      padding-bottom: 0.5rem;
+}
+
+.item:hover {
+      border-bottom: 1px solid grey;
+}
+
+@media screen and (max-width: 375px) {
+
+      .body {
+            height: 0;
+      }
+
+      h1 {
+            margin-top: 1rem;
+      }
+
+      .main-cont {
+            display: block;
+      }
+
+      .main-form {
+            padding-left: 0;
+      }
+
+      .steptwo {
+            padding-left: 0;
+      }
+
+      .stepthree {
+            padding-left: 0;
+      }
+
+      .stepfour {
+            padding-left: 0;
+      }
+
+      .form-cont {
+            margin: 0;
+      }
+
+      .form-col {
+            margin-bottom: 0;
+      }
+
+      .monthFree {
+            font-size: 12px;
+      }
+}
