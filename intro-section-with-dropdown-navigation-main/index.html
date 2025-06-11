@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js"></script>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav-bar">
+        <img src="./images/logo.svg" alt="" class="logo" />
+        <ul>
+          <div class="drop-item dropdown">
+            <li class="dropbtn" onclick="myFunction()">Features</li>
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="16px"
+              height="16px"
+              class="arr"
+            />
+            <div class="dropdown-content" id="myDropdown">
+              <div class="dropdown-item">
+                <img src="./images/icon-todo.svg" alt="" class="drop-img" />
+                <a href="">To Do List</a>
+              </div>
+              <div class="dropdown-item">
+                <img src="./images/icon-calendar.svg" alt="" class="drop-img" />
+                <a href="">Calender</a>
+              </div>
+              <div class="dropdown-item">
+                <img
+                  src="./images/icon-reminders.svg"
+                  alt=""
+                  class="drop-img"
+                />
+                <a href="">Reminders</a>
+              </div>
+              <div class="dropdown-item">
+                <img src="./images/icon-planning.svg" alt="" class="drop-img" />
+                <a href="">Planning</a>
+              </div>
+            </div>
+          </div>
+          <div class="drop-item dropdown">
+            <li class="dropbtn" onclick="myFunc()">Company</li>
+            <img
+              src="./images/icon-arrow-down.svg"
+              alt=""
+              width="16px"
+              height="16px"
+              class="arr"
+            />
+            <!-- <img src="./images/icon-arrow-up.svg" alt="" /> -->
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">History</a>
+              <a href="#">Our Team</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div>
+      <div class="nav-log">
+        <p>Login</p>
+        <p class="register">Register</p>
+      </div>
+    </header>
+    <div class="main-grid">
+      <div class="text-content">
+        <h1>Make <br />remote work</h1>
+        <p>
+          Get your team in sync, no matter your location.<br />
+          Streamline processes, create team rituals, and <br />watch
+          productivity soar.
+        </p>
+        <button class="learn">Learn more</button>
+        <div class="logo-row">
+          <img src="./images/client-databiz.svg" alt="" />
+          <img src="./images/client-audiophile.svg" alt="" />
+          <img src="./images/client-meet.svg" alt="" />
+          <img src="./images/client-maker.svg" alt="" />
+        </div>
+      </div>
+      <div class="web-img"></div>
+    </div>
+    <!--c      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>
