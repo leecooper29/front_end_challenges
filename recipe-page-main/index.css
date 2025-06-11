@@ -1,0 +1,167 @@
+* {
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif ;
+}
+
+body {
+      font-size: 16px;
+}
+
+h1 {
+      font-size: 25px;
+      font-weight: 600;
+      padding-top: 1rem;
+      font-family: "Young Serif", serif;
+}
+
+h2 {
+      font-size: 18px;
+      color: hsl(280, 51%, 38%);
+      margin-bottom: 1rem;
+      font-family: "Young Serif", serif;
+}
+
+h3 {
+      font-size: 18px;
+      color:  hsl(332, 51%, 32%);
+      padding-top: 1rem;
+      font-family: "Young Serif", serif;
+      margin-bottom: 1rem;
+
+}
+
+.hr  {
+      color: hsl(30, 18%, 87%);
+}
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background-color: hsl(30, 54%, 90%);
+      
+}
+
+.recipe-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin: 1rem;
+      padding: 1rem;
+      border-radius: 8px;
+      background-color:  hsl(0, 0%, 100%);
+      
+}
+
+.img-container {
+      display: flex;
+      flex-direction: column; 
+      height: 30vh;
+      min-width: 100%;
+      border-radius: 6px;
+      background-image: url(./assets/images/image-omelette.jpeg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+}
+
+.recipe {
+      display: flex;
+      flex-direction: column;
+}
+.desc {
+      padding-top: 1rem;
+}
+
+.prep-container {
+      padding: 1rem;
+}
+
+.prep-list li {
+      padding: 0.25rem;
+      
+}
+
+.ingredients-container {
+      display: flex;
+      flex-direction: column;
+
+      border-bottom: 1px solid darkgray;
+      
+}
+
+.ingredients-list {
+
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+      
+}
+
+.ingredients-list li {
+      padding: 0.25rem;
+      padding-left: 0.5rem;
+}
+
+.steps-container {
+
+      border-bottom: 1px solid darkgray;
+}
+
+.steps-list {
+
+      padding-bottom: 1rem;
+      padding-left: 2rem;
+}
+
+.steps-list li {
+      padding: 0.25rem;
+      padding-left: 0.5rem;
+}
+
+
+.bottom-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 1rem;
+
+}
+
+.bottom-border {
+      border-bottom: 1px solid darkgrey;
+      padding:  0.5rem 0;
+}
+
+.bottom-table p {
+      padding-top: 0.5rem;
+      padding-left: 2rem;
+}
+
+.bottom-table p:nth-child(even) {
+      font-weight: bold;
+      color:  hsl(332, 51%, 32%);
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 390px) {
+
+      .main-container {
+            padding: 0;
+      }
+
+      .recipe-form {
+            width: 100%;
+            margin: 0;
+
+      }  
+}
