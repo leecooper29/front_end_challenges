@@ -1,0 +1,137 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body{
+      font-size: 24px;
+      background-color:  hsl(185, 41%, 84%);
+      height: 100vh;
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+.tip-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+      background-color: white;
+      border-radius: 12px;
+}
+
+h1 {
+      font-size: 16px;
+      font-family: "Open Sans", serif;
+      font-weight: 700;
+      margin-top: 1rem;
+}
+
+.select-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+}
+
+.tip-calc {
+      border:  none;
+      background-color: transparent;
+      padding: 0.30rem 1rem;
+      background-color: hsl(183, 100%, 15%);
+      color: white;
+      padding: 0.5rem 1rem;
+}
+
+.light {
+      background-color: hsl(172, 67%, 45%);
+      color: white;
+}
+
+input {
+      width: 100%;
+      margin-top: 1rem;
+}
+
+.place {
+      /* place */
+}
+
+.blank {
+      align-items: center;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+}
+
+.left {
+      padding-right: 1rem;
+}
+
+.right {
+      background-color:  hsl(183, 100%, 15%);
+      padding: 1rem;
+      border-radius: 14px;
+}
+
+.right-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 7rem;
+}
+
+.amount {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      justify-content: space-between;
+      color: white;
+      margin-bottom: 1rem;
+}
+
+.tipAmount {
+      color: hsl(172, 67%, 45%);
+}
+
+.totalAmount {
+      color: hsl(172, 67%, 45%);
+
+}
+
+.reset {
+      padding: 0.2rem 0.8rem;
+      background-color:hsl(186, 14%, 43%);
+      color: white;
+      width: 100%;      
+}
+.reset:hover {
+      background-color: hsl(172, 67%, 45%);;
+}
+
+@media  (max-width: 375px) {
+
+      h1 {
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+      }
+
+      .tip-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+            width: 300px;
+      }
+      .right {
+            margin-top: 1rem;
+      
+      }
+}

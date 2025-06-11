@@ -1,0 +1,145 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-weight: 100;
+      font-style: normal;
+}
+
+body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 3rem; 
+      background-color:  hsl(210, 46%, 95%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 0.8fr;
+    gap: 1.5rem;
+    max-width: 66rem;
+}
+
+/* grid items 3 and 4 have text that does not extend to the bottom of the item */
+.grid-item {      
+      padding: 1.5rem;
+      border-radius: 5px;
+      box-shadow: 5px 5px 64px -16px hsl(0, 0%, 81%);
+}
+
+.span-two-columns {
+      grid-column: span 2;
+}
+
+.span-two-rows {
+      grid-row: span 2;
+}
+
+.profile-panel {
+      display: flex;
+      align-items: center;
+}
+
+.profile-name {
+      margin-left: 1rem;
+}
+
+h1 {
+      font-size: 13px;
+      font-weight: bold;
+}
+
+.profile-img {
+      border-radius: 50%;
+      max-width: 30px;
+      border: 1px solid hsl(264, 25%, 65%);
+}
+
+.isverified {
+      font-size: 12px;
+}
+
+/* line break at a certain word could be affected by the padding on each grid-item */
+.headline {
+      font-size: 19px;
+      font-weight:  600;
+      line-height: 22px;
+      margin: 1rem 0;
+}
+
+.quote {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 18px;
+      color: hsl(0, 0%, 70%);
+}
+
+.grey-background {     
+      background-color: hsl(217, 19%, 35%);
+}     
+
+ /* moving the image to the left (right side cuts off at the a in learned  */
+.purple-background {
+      background-color:hsl(263, 55%, 52%);
+      background-image: url(./images/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      /* background-position: right 0px; */
+      background-position : calc(100% - 90px) 0;
+}
+
+.black-background {
+      background-color:  hsl(219, 29%, 14%);
+}
+
+.white-text {
+      color: white;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {  
+      
+      body {
+            padding: 1.5em;
+      }
+      /* second contaner height is affected  (solve with grid-template-rows) */
+
+      main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr ;
+      }
+      
+      /*completed - order for phone view is 1, 2 ,4, 5, 3 */
+      .grid-item:nth-child(3) {
+            order: 5;
+      }
+
+      .span-two-columns {
+            grid-column: span 1;
+      }
+
+      .span-two-rows {
+            grid-row: span 1;
+      }
+
+      .headline {
+            font-size: 18px;
+      }
+
+      .dismissible {
+            display: none;
+      }
+}
