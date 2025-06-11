@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Contact form</title>
+  <script src="./index.js"></script>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .error-message {
+      color: red;
+      display: none; /* Initially hide error messages */
+    }
+    .error-message.isError {
+      display: block; /* Show error messages when there's an issue */
+    }
+  </style>
+  <!-- only thing did not add was the success modal -->
+</head>
+<body>
+  <main>
+    <form class="contact-form" id="myForm">
+      <h1>Contact Us</h1>
+      <div class="name-items top">
+        <div class="form-item">
+          <label>First Name *</label>
+          <input type="text" class="inputfield" id="first-name">
+          <p class="error-message" data-error-for="first-name">This field is required</p>
+        </div>
+        <div class="form-item">
+          <label for="">Last Name *</label>
+          <input type="text" class="inputfield" id="last-name">
+          <p class="error-message" data-error-for="last-name">This field is required</p>
+        </div>
+      </div>
+      <label for="email" class="email">Email Address *</label>
+      <input type="text" class="inputfield" id="email">
+      <p class="error-message" data-error-for="email">Please enter a valid email address</p>
+
+      <div class="name-items">
+        <div class="form-item">
+          <label for="">Query Type *</label>
+          <div class="form-item-row">
+            <input type="checkbox" id="general-enquiry">
+            <p>General Enquiry</p>
+          </div>
+          <p class="error-message" data-error-for="general-enquiry">Please select a query type</p>
+        </div>
+        <div class="form-item">
+          <label for="">&nbsp;</label>
+          <div class="form-item-row">
+            <input type="checkbox" id="support-request">
+            <p>Support Request</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-field">
+        <label for="">Message *</label>
+        <textarea class="inputfield" id="message"></textarea>
+        <p class="error-message" data-error-for="message">This field is required</p>
+      </div>
+      <div class="">
+        <input type="checkbox" id="consent">
+        I consent to being contacted by the team *
+        <p class="error-message" id="error-message">To submit this form, please consent to being contacted</p>
+      </div>
+      <button type="submit" class="primary-btn">Submit</button>
+    </form>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

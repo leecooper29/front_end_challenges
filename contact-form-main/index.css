@@ -1,0 +1,111 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 14px;
+      font-family: "Rubik", sans-serif;
+      background-color: hsl(148, 38%, 91%);
+}
+
+main {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+h1 {
+      font-size: 25px
+}
+
+.contact-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 10px;
+}
+
+.name-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-top: 1rem;
+}
+
+.form-item {
+      display: flex;
+      flex-direction: column;
+}
+
+.form-item-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border: 1px solid grey;
+      padding: 0.5rem;
+      border-radius: 4px;
+}
+
+label {
+      margin-bottom: 0.5rem;
+}
+
+input {
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: 1px solid grey;
+}
+
+.error-message {
+      display: none;
+      color: red;
+      margin-top: 0.5rem;
+      font-size: 0.875rem;
+}
+
+/* select the input type checkbox */
+
+.isError {
+      display: block;
+}
+
+.email {
+      margin-top: 1rem;
+}
+
+.message-field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+}
+
+textarea {
+      height: 5rem;
+      border-radius: 6px;
+}
+
+.primary-btn {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background-color: hsl(169, 82%, 27%);
+      color: white;
+}
+
+.primary-btn:hover {
+      background-color: hsl(169, 88%, 17%);
+}
+
+@media screen and (max-width: 375px) {
+
+      .contact-form {
+            padding: 1rem;
+            margin: 2rem;
+      }
+}
