@@ -1,0 +1,130 @@
+* {
+
+}
+
+body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 15px;
+      font-family: "Poppins", sans-serif;
+}
+
+main {
+      display: flex;
+      align-items: center;
+      min-width: 100vw;
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-width: 100%;
+}
+
+.main-header  {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-weight: 200;
+      padding-top: 1rem;
+}
+
+.main-header p {
+      max-width: 60%;
+      text-align: center;
+}
+
+.tech-desc {
+
+}
+
+h1 {
+      font-size: 30px;
+      font-weight: 200;
+      margin: 0;
+      color: rgb(78, 74, 74);
+}
+
+h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      padding: 1rem;
+      max-width: 1500px;
+}
+
+.grid-card {
+      padding: 1rem;
+      margin: 1rem;
+      border-radius: 4px;
+      border: none;
+      border-top: 4px solid black;
+      box-shadow: 0px 6px 6px 3px rgba(161,155,155,0.75);
+      -webkit-box-shadow: 0px 6px 6px 3px rgba(161,155,155,0.75);
+      -moz-box-shadow: 0px 6px 6px 3px rgba(161,155,155,0.75);
+}
+
+
+.aqua {
+      border-color: hsl(180, 62%, 55%);
+}     
+
+.red {
+      border-color: hsl(0, 78%, 62%);
+}
+
+.yellow {
+      border-color: hsl(34, 97%, 64%);
+}
+
+.blue {     
+      border-color:hsl(212, 86%, 64%);
+}
+
+.grid-card p {
+      font-weight: 200;
+}
+
+.icon-container {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      margin-top: 3rem;
+}
+
+@media screen and (max-width: 375px) {
+
+      .main-container h1 {
+            font-size: 25px;
+      }
+
+      .main-container h2 {
+            font-size: 25px;
+            
+      }
+      .main-header p {
+            max-width: 80%;
+      }
+      .grid {
+            grid-template-columns: 1fr;
+      }
+ 
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}

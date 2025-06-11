@@ -1,0 +1,372 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;     
+      background-color:  hsl(218, 28%, 13%);
+      /* margin: 0rem 4rem 0rem 4rem; */
+      color: white;
+}
+/* 
+main {
+} */
+
+header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4rem;
+      font-family: "Raleway", sans-serif;
+}
+
+h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+}
+
+.header-items > a {
+      padding-left: 1rem;
+      padding-right: 1rem;
+}
+
+.file-access {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 2rem;
+}
+
+.file-access > p {
+      align-items: center;
+      margin-bottom: 1rem;
+}
+
+button{
+      width: 180px;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border-radius: 20px;
+      background-image: linear-gradient(
+  90deg,
+  hsl(175deg 68% 64%) 0%,
+  hsl(179deg 65% 60%) 11%,
+  hsl(182deg 65% 57%) 22%,
+  hsl(185deg 66% 55%) 33%,
+  hsl(187deg 67% 53%) 44%,
+  hsl(189deg 68% 51%) 56%,
+  hsl(191deg 67% 50%) 67%,
+  hsl(193deg 67% 50%) 78%,
+  hsl(195deg 64% 50%) 89%,
+  hsl(198deg 60% 50%) 100%
+);
+}
+
+.files-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 4rem;
+      gap: 8rem;
+}
+
+h2 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      text-align: center;
+}
+
+.grid-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+}
+
+.left-column {
+      align-items: flex-end;
+}
+
+.right-column {
+      align-items: flex-start;
+}
+
+.grid-row > p {
+      text-align: center;
+}
+
+.grid-item   {
+      margin-top: 4rem;
+}
+
+.item-info {
+      width: 300px;
+}
+
+.productivity-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      /* margin-top: 4rem; */
+      /* margin-bottom: 4rem; */
+      margin: 4rem;
+      gap: 1rem;
+}
+
+.productive-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+      left: 2rem;
+      padding: 1rem;
+      padding-left: 4rem; 
+}
+
+.profile {
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+}
+
+.quote-grid-item >p {
+      line-height: 1.2rem;
+}
+
+.profile-img img {
+      width: 30px;
+      border-radius: 50%;     
+}
+
+.profile-img {
+      padding-right: 0.5rem;
+}
+
+.productive-desscription {
+      margin-bottom: 1rem;
+}
+
+h3 {
+      font-size: 24px;
+      margin-bottom: 1rem;
+}
+
+.neon {
+      color: hsl(176, 68%, 64%);
+      text-decoration: underline;
+      
+      margin-top: 1rem;
+}
+
+.quotes-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      gap: 1.5rem;
+      margin: 4rem;
+}
+
+.quote {
+      position: absolute;
+      top: -35px;
+}
+
+.quote-grid-item {
+      background-color: hsl(219, 30%, 18%);
+      padding: 1rem;
+      border-radius: 6px;
+}
+
+.quote-grid-item > p {
+      margin-top: 1rem;
+}
+
+.subscribe-cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: 99 !important;
+      position: relative;
+      top: 1rem;
+      justify-content: center;
+      padding: 1rem;
+      margin-top: 1rem;
+}
+
+.access {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: 2rem;
+      background-color:  hsl(217, 28%, 15%);
+      align-items: center;
+      padding: 1rem;
+}
+
+.access > p {
+      text-align: center;
+      width: 650px;
+}
+
+input {
+      width: 400px;
+}
+
+.free-acess {
+      display: flex;
+}
+
+input {
+      padding: 0.5rem;
+      border-radius: 15px;
+      margin-right: 1rem;
+      
+}
+
+.footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      width: 100%;
+      margin: 0;
+      padding-top: 5rem;
+      background-color:  hsl(216, 53%, 9%);
+}     
+
+.footer-item {
+      padding-left: 4rem;
+}
+
+.logo-img {
+      margin-bottom: 2rem;
+}
+
+.footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+}
+
+.phone-item {
+      display: flex;
+      margin-bottom: 1rem;
+}
+
+.phone-item > img {
+      padding-right: 1rem;
+}
+
+.email-item {
+      display: flex;
+}
+
+.email-item > img {
+      padding-right: 1rem;
+}
+
+@media screen and (max-width: 375px) {
+
+      header {
+            margin: 2rem;
+      }
+
+      .header-items > a {
+            padding-left: 0;
+      }
+
+      .logo {
+            height: 20px;
+      }
+
+      h1 {
+            text-align: center;
+      }
+
+      main {
+            margin: 1rem;
+      }
+
+      .header-items {
+            display: flex;
+            font-size: 14px;
+      }
+
+      .file-access > img {
+            height: 240px;
+            width: 240px;
+      }
+    
+      .files-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0rem;
+            margin: 0;
+      }
+
+      .left-column {
+            align-items: center;
+      }
+
+      .right-column {
+            align-items: center;
+      }
+
+      .productivity-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0;
+            margin-top: 2rem;
+      }
+
+      .productive-item {
+            padding: 0;
+      }
+
+      .productive-item > img {
+      }
+
+      .bg-image {
+            height: 30vh;
+            margin-top: 4rem;
+      }
+
+      .quotes-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin: 0;
+            margin-top: 4rem;
+      }
+      
+      .none {
+            display: none;
+      }
+
+      .subscribe-cont {
+            display: none;
+      }
+
+      .footer {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+      .footer-item {
+            text-align: center;
+            padding: 0;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+      }
+
+      .phone-item {
+            justify-content: center;
+      }
+
+      .email-item {
+            justify-content: center;
+      }
+
+      .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+      }
+}
