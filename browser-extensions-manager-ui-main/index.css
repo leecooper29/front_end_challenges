@@ -1,0 +1,146 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 16px;
+      font-family: "Noto Sans", sans-serif;
+      background-color: lightgrey;
+}
+
+.lighttheme {
+      background-color: gray;
+      color: black;
+}
+
+.darktheme {
+      background-color: black;
+      color: white;
+}
+
+.isHidden {
+      direction: none;
+}
+
+/* grid-item, background color, header bar */
+/* grid item for dark theme */
+.darktheme .extension-bar .grid-item {
+      background-color: hsl(226, 11%, 37%);
+}
+
+header {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem;
+      align-items: center;
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 10px;
+}
+
+.theme-switcher {
+      padding: 0.5rem;
+      background-color: lightgrey;
+      border-radius: 10px;
+}
+
+.extension-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 2rem;
+}
+
+.selection-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.selection-item-1 {
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 10px;
+}
+
+
+.selection-item-1:hover {
+      padding: 0 0.5rem;
+      border: 2px solid red;
+      padding: 0.5rem;
+}
+
+.selection-item-2 {
+      padding: 0 0.5rem;
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 10px;
+      margin-left: 0.5rem;
+}
+
+.selection-item-2:hover {
+      padding: 0 0.5rem;
+      border: 2px solid red;
+      padding: 0.5rem;
+}
+
+.selection-item-3 {
+      padding: 0 0.5rem;
+      background-color: white;
+      padding: 0.5rem;
+      border-radius: 10px;
+      margin-left: 0.5rem;
+}
+
+.selection-item-3:hover {
+      padding: 0 0.5rem;
+      border: 2px solid red;
+      padding: 0.5rem;
+}
+
+.extension-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 1rem;
+}
+
+.item-flex {
+      display: flex;
+}
+
+
+h2 {
+      font-size: 16px;
+}
+
+.grid-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: white;
+      margin: 0.5rem;
+      padding: 1rem;
+      /* border-radius: 16px; */
+}
+
+.item-text {
+      padding-left: 1rem;
+}
+
+.item-text>p {
+      font-size: 14px;
+}
+
+button {
+      padding: 0.3rem;
+      border-radius: 5px;
+}
+
+.between {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5rem;
+}

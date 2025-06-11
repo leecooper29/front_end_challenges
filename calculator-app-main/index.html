@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="theme-1">
+    <main>
+      <div class="main-container">
+        <div class="theme-toggle">
+          <p class="theme-toggle-left">calc</p>
+          <!--       <p class="theme-toggle-right">THEME</p> -->
+          <div class="containerToggleTheme">
+            <div class="containerToggleThemeType">
+              <span onclick="themeChange('1')">1</span>
+              <span onclick="themeChange('2')">2</span>
+              <span onclick="themeChange('3')">3</span>
+            </div>
+            <div class="containerToggleThemeButtons">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="output-field" id="output-field">
+          <p>0</p>
+        </div>
+        <div class="calculator-container">
+          <div class="calculator-grid">
+            <button class="btn" onclick="inputNumber(7)">7</button>
+            <button class="btn" onclick="inputNumber(8)">8</button>
+            <button class="btn" onclick="inputNumber(9)">9</button>
+            <button class="btn alt" onclick="del()">DEL</button>
+            <button class="btn" onclick="inputNumber(4)">4</button>
+            <button class="btn" onclick="inputNumber(5)">5</button>
+            <button class="btn" onclick="inputNumber(6)">6</button>
+            <button class="btn" onclick="add()">+</button>
+            <button class="btn" onclick="inputNumber(1)">1</button>
+            <button class="btn" onclick="inputNumber(2)">2</button>
+            <button class="btn" onclick="inputNumber(3)">3</button>
+            <button class="btn" onclick="subtract()">-</button>
+            <button class="btn" onclick="inputNumber('.')">.</button>
+            <button class="btn" onclick="inputNumber(0)">0</button>
+            <button class="btn" onclick="divide()">/</button>
+            <button class="btn" onclick="multiply()">x</button>
+            <button class="btn alt span-2" onclick="resetCalculator()">
+              RESET
+            </button>
+            <button class="btn equals span-2" onclick="equals()">=</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class=""></div>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lee Cooper</a>.
+    </div> -->
+  </body>
+  <script src="./index.js"></script>
+</html>

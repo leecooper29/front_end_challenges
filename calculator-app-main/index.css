@@ -1,0 +1,297 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+}
+
+body {
+      font-family: "League Spartan", sans-serif;
+
+}
+
+body.theme-1 {
+      background-color: hsl(222, 26%, 31%);
+}
+
+body.theme-2 {
+      background-color: hsl(0, 0%, 90%);
+}
+
+body.theme-3 {
+      background-color: hsl(268, 75%, 9%);
+}
+
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+}
+
+.calculator-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;    
+      justify-content: center;
+      border-radius: 6px;
+      padding: 1rem;
+      
+}
+
+.theme-1 .calculator-container {
+      background-color:  hsl(223, 31%, 20%);
+}
+
+.theme-2 .calculator-container {
+      background-color:   hsl(0, 5%, 81%);
+}
+
+.theme-3 .calculator-container {
+      background-color: hsl(268, 71%, 12%);
+}
+
+.theme-toggle {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      min-width: 100%;
+      margin-bottom: 1rem;
+}
+
+.theme-1 .theme-toggle {
+      color: white;
+}
+
+.theme-2 .theme-toggle {
+      color: black;
+}
+
+.theme-3 .theme-toggle {
+      color: yellow;
+}
+
+
+.theme-toggle-left {
+      font-size: 25px;
+      font-weight: bold;
+}
+
+.theme-toggle-right {
+      font-size: 10px;
+}
+
+.output-field {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      padding: 2rem 1rem;
+      margin-bottom: 1rem;
+      min-width: 100%;
+      font-size: 2.5rem;
+      font-weight: bold;
+      border-radius: 6px;
+}
+
+.theme-1 .output-field {
+      color: white;
+      background-color: hsl(224, 36%, 15%);
+}
+
+.theme-2 .output-field {
+      color: black;
+      background-color: hsl(0, 0%, 93%);
+}
+
+.theme-3 .output-field {
+      color: yellow;
+      background-color:hsl(268, 71%, 12%);
+}
+
+.calculator-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 1rem;
+}
+
+.alt {
+      padding: 0.5rem;
+      font-size: 18px !important;
+
+}
+
+.theme-1 .alt {
+      background-color: hsl(225, 21%, 49%) !important;
+      color: white !important;
+}
+
+.theme-2 .alt {
+      background-color:hsl(185, 42%, 37%)!important;
+      color: white !important;
+}
+
+.theme-3 .alt {
+      background-color:hsl(290, 70%, 36%) !important;
+      color: white !important;
+}
+
+.btn {
+      padding: 0.5rem;
+      border-radius: 6px;
+      font-size: 25px;
+      font-weight: bold;
+      min-width: 5rem;
+      border: none;
+}
+
+.theme-1 .btn:hover {
+      background-color: white;
+}
+
+.theme-2 .btn:hover {
+      background-color: white;
+}
+
+.theme-3 .btn:hover {
+      background-color: hsl(290, 70%, 36%);
+}
+
+.theme-1 .btn {
+      color:  hsl(221, 14%, 31%);
+      background-color:  hsl(45, 7%, 89%);
+      box-shadow: 2px 2px #888888;
+}
+
+.theme-2 .btn {
+      color:  hsl(221, 14%, 31%);
+      background-color:  hsl(45, 7%, 89%);
+      box-shadow: 2px 2px hsl(185, 58%, 25%);
+}
+
+.theme-3 .btn {
+      color:  yellow;
+      background-color:  hsl(268, 50%, 28%);
+      box-shadow: 2px 2px hsl(285, 91%, 52%);
+}
+
+.equals {
+      padding: 0.5rem;
+      border-radius: 6px;
+      font-size: 16px !important;
+}
+
+.theme-1 .equals {
+      background-color:  hsl(25, 98%, 40%);
+      box-shadow: 2px 2px  hsl(25, 99%, 27%);
+      color: white;
+}
+
+.theme-2 .equals {
+      background-color:hsl(25, 98%, 40%);
+      box-shadow: 2px 2px  hsl(25, 99%, 27%);
+      color: white;
+}
+
+.theme-3 .equals {
+      background-color:  hsl(176, 100%, 44%);
+      box-shadow: 2px 2px hsl(177, 92%, 70%);
+      color: white;
+}
+
+.theme-1 .equals:hover {
+      background-color: hsl(25, 98%, 40%);
+      
+      color: white;
+}
+
+.theme-2 .equals:hover {
+      background-color:hsl(25, 98%, 40%);
+      color: white;
+}
+
+.theme-3 .equals:hover {
+      background-color:  hsl(176, 100%, 44%);
+      color: white;
+}
+
+.span-2 {
+      grid-column: span 2;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+ }
+
+.theme-1 .attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+.theme-2 .attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+.theme-3 .attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+      .main-container {
+
+      }
+      .calculator-container{
+
+      }
+      .calculator-grid {
+
+      }
+}
+
+
+.containerToggleTheme {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .containerToggleThemeType,
+    .containerToggleThemeButtons {
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    .containerToggleThemeType span {
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+    
+    .containerToggleThemeButtons div {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: hsl(224, 36%, 15%);
+    }
+    
+    .containerToggleThemeButtons div:hover {
+      cursor: pointer;
+    }
+    
+    .containerToggleThemeButtons div:first-child {
+      border-top-left-radius: 16px;
+      border-bottom-left-radius: 16px;
+    }
+    
+    .containerToggleThemeButtons div:last-child {
+      border-top-right-radius: 16px;
+      border-bottom-right-radius: 16px;
+    }
+    
