@@ -1,0 +1,203 @@
+.body {
+background-color: #f9fafd;
+font-weight: 400;
+font-style: normal;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+max-width: 100%;
+color: #fff;
+}
+
+.wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+box-shadow: 1px solid black; /*subtle changes added make a dfference*/
+height: 90%;
+font-family: "Plus Jakarta Sans", sans-serif;
+width: 50%;
+margin: 0 auto;
+padding: 1rem;
+color: black;
+background-color: #ffffff;
+}
+
+.page-header {
+display: flex;
+justify-content: space-between;
+width: 100%;
+margin-bottom: 10px;
+}
+
+.page-header > span {}
+
+.noti {
+padding-right: 1rem;
+font-weight: bold;
+font-size: 18px;
+}
+
+.marked:hover {
+      color:  hsl(219, 85%, 26%);
+}
+
+.three {
+padding: 1px 10px;
+color: hsl(0, 0%, 100%);
+border-radius: 4px;
+background-color: hsl(219, 85%, 26%);
+}
+
+.notifications-container {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+height: 100%;
+}
+
+.profile-image {
+padding-left: 8px;
+padding-right: 12px;
+}
+
+
+.profile-image > img {
+      
+}
+      
+
+.chess-image {
+      float: right;
+}
+
+.notification {
+display: flex;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+.notification-1{
+display: flex;
+width: 100%;justify-content: space-between;
+padding-top: 10px;
+padding-bottom: 10px;
+}
+
+
+.cont-1 {
+display: flex;
+justify-content: space-between;
+
+}
+img {
+width: 30px;
+height: 30px;
+}
+
+.chess-image-1 {
+      margin: 10px;
+      align-items: right;
+}
+
+.profile-description {
+
+}
+
+.profile-description > p {
+      margin-bottom: 0.2rem;
+      color: hsl(219, 14%, 63%);
+}
+
+.z-box {
+display: flex;
+border: 0.5px solid lightgray;
+padding: 12px;
+margin-top: 10px;
+}
+
+.z-box > p {
+      color:  hsl(219, 12%, 42%);
+}
+
+.z-box:hover {
+      background-color:hsl(205, 33%, 90%);     
+}
+
+.profile-description img {
+float: right;
+}
+
+p span {
+font-weight: bold;
+}
+
+p {
+padding: 0;
+margin: 0;
+}
+
+.abc {
+      color:   hsl(219, 12%, 42%);
+      font-weight: 800;
+}
+
+.abc:hover {
+      color: hsl(219, 85%, 26%);   
+}
+
+.name {
+      color: black;
+}
+
+.name-hover {
+      color: black;
+}
+
+.name-hover:hover {
+      color: hsl(219, 85%, 26%);   
+
+}
+
+.blue {
+      color: hsl(219, 85%, 26%);
+}
+
+.grey {
+      color:  hsl(235, 18%, 26%);
+}
+
+.date-created {
+      color:  hsl(219, 14%, 63%);
+}
+
+.attribution {
+font-size: 11px;
+text-align: center;
+}
+
+.attribution a {
+color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+
+    .container {
+    }
+
+     .wrapper {
+      padding: 1rem;
+      margin: 1rem;
+      width: 100%;
+      border: none;
+     }
+
+     .attribution{
+      display: none;
+     }
+}
