@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Room homepage</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+     <!-- project 28/48 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myNav" class="overlay ">
+      <div class="drop-nav" id="dropNAv"> 
+        <button  onclick="closeNav()">
+        <img src="./images/icon-close.svg" alt="" class="closebtn">
+      </button>
+      <a class="empty">&nbsp;</a>
+        <a href="">home</a>
+        <a href="">shop</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+      </div>
+    </div>
+    <main class="office-room-grid" id="office">
+      <section class="grid-item item-nav">
+        <nav class="">
+          <ul class="nav-bar" id="nav-bar">
+            <li class="icon" id="icon" onclick="openNav()">
+               <img src="./images/icon-hamburger.svg" height="16px" width="16px" ></img> 
+            </li>
+            <li class="title" id="title">
+              <img src="./images/logo.svg" alt="" />
+            </li>
+            <li class="empty">&nbsp;</li>
+              <li>home</li>
+              <li>shop</li>
+              <li>about</li>
+              <li>contact</li>
+          </ul>
+        </nav>
+        <img src="./images/desktop-image-hero-1.jpg" alt="" class="pic-height-100 pic-width-100" id="bg-image"> 
+        <div class=" mobile-arrow">
+          <div class="arrows">
+            <button id="previous" class="btn" onclick="previous()">
+              <img src="./images/icon-angle-left.svg" alt="" />
+            </button>
+            <button id="next" class="btn" onclick="next()"">
+              <img src="./images/icon-angle-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="grid-item first-row-right">
+        <section class="img-slider">
+          <h2 id="content">Discover innovative ways to decorate</h2>
+          <p id="info">
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+          <div class="shop-item">
+            <p class="spacing-text">SHOP NOW</p>
+            <div class="">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <!--  no closing section on selection arrow that is affecting layout, there is also a small gap  -->
+        <div class="selection-arrow">
+          <div class="arrows">
+            <button id="previous" class="btn" onclick="previous()">
+              <img src="./images/icon-angle-left.svg" alt="" />
+            </button>
+            <button id="next" class="btn" onclick="next()"">
+              <img src="./images/icon-angle-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <section class="grid-item first-cell">
+        <img src="./images/image-about-dark.jpg" alt="" class="pic-width-100 pic-height-100" />
+      </section>
+      <section class="grid-item second-cell">
+        <h3>ABOUT OUR FURNITURE</h3>
+        <p>
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </section>
+      <section class="grid-item third-cell">
+        <img
+          src="./images/image-about-light.jpg"
+          alt=""
+          class="pic-width-100 pic-height-100"
+        />
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lee Cooper</a>.
+    </div> -->
+    <script src="./index.js"></script>
+  </body>
+</html>

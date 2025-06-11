@@ -1,0 +1,258 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+ body {
+      font-size: 16px;
+      height: 100vh;
+      font-family: "Hanken Grotesk", sans-serif;
+
+      font-optical-sizing: auto;
+      /*font-weight: 400;*/
+      font-style: normal;
+ }
+
+h1 {
+      text-align: center;
+      margin-top: 0.5rem;
+      margin-bottom: 1.8rem;
+      font-size: 16px;
+      font-weight: 800;
+}
+
+h1 {
+     color:  hsl(241, 100%, 89%);
+}
+
+
+h2 {
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      color: hsl(0, 0%, 100%)
+}
+
+h3 {
+      font-size: 22px;
+      margin-top: 0.8rem;
+      color:  hsl(224, 30%, 27%);
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+.summary-component {
+      display: flex;
+      align-self: center;
+      justify-content: space-between;
+      max-width: 50rem;
+}
+
+.summary-items {
+     padding: 1rem;
+}
+
+.summary-rating {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1rem 0 1rem;
+}
+
+.red-bg {
+     background-color:  hsla(0, 100%, 67%,  0.05);
+     padding: 0.5rem;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.orange-bg {
+     background-color: hsla(39, 100%, 56%,  0.05);
+     padding: 0.5rem;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.green-bg {
+     background-color:  hsla(166, 100%, 37%, 0.05);
+     padding: 0.5rem;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.blue-bg {
+     background-color: hsla(234, 85%, 45%,  0.05);
+     padding: 0.5rem;
+     border-radius: 10px;
+     margin-bottom: 1rem;
+}
+
+.item {
+     display: flex;
+     align-items: center;
+}
+
+.item > span {
+     margin-left: 0.5rem;
+}
+
+.rate {
+     color:  hsl(241, 100%, 89%);
+}
+
+.react {
+     color:  hsl(0, 100%, 67%);
+     font-weight: 500;
+}
+
+.memory {
+     color: hsl(39, 100%, 56%);
+     font-weight: 500;
+}
+
+.verb {
+     color: hsl(166, 100%, 37%);
+     font-weight: 500;
+}
+
+.visual {
+     color: hsl(234, 85%, 45%);
+     font-weight: 500;
+}
+
+.summary-rating > span {
+     align-items: center;
+}
+
+ .results-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      right: -0.25rem;
+      padding: 1.3rem;
+      border-radius: 16px 16px 16px 16px;
+      background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+ }
+
+.results-comment {
+      text-align: center;
+}
+
+.results-comment p {
+      max-width: 14rem;
+      padding: 0 1rem 0 1rem;
+      color:   hsl(241, 100%, 89%);
+      font-size: 14px;
+}
+
+.span {
+      font-size: 25px;
+}
+
+ .circle {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+      color: white;
+ }
+
+ .circle > p {
+     color:  hsl(241, 100%, 89%);
+ }
+
+ .num {
+      font-size: 50px;
+      color:  hsl(0, 0%, 100%);
+      font-family: "Hanken Grotesk", sans-serif;
+      font-weight: 600;
+ }
+ 
+ .summary-container {
+      display: flex;
+      flex-direction: column;
+      width: 16rem;
+      padding: 1.25rem;
+      border-radius: 16px 16px 16px 0px;
+      box-shadow: 3px 7px 5px 0px rgba(130,108,108,0.72);
+      -webkit-box-shadow: 3px 7px 5px 0px rgba(130,108,108,0.72);
+      -moz-box-shadow: 3px 7px 5px 0px rgba(130,108,108,0.72);
+ }
+ /* issue her was gettin the box shadow to match the mock up */
+
+ button {
+     border-radius: 20px;
+     padding: 0.75rem;
+     border: none;
+     background-color: hsl(224, 30%, 27%);
+     color: white;
+ }
+
+button:hover {
+     background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+    
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+/* only issue here was the border radius in the phone view */
+@media screen and (max-width: 375px) {
+
+     h3 {
+          font-size: 18px;
+     }
+
+     .main-container {
+          display: block;
+     }
+
+     .summary-container {
+          padding: 2.2rem;
+          padding-top: 0;
+     }
+
+      .summary-component {
+          height: 100vh;
+          display: grid;
+      }
+
+      .summary-rating {
+          margin-bottom: 1.5rem;
+      }
+
+      .results-container {
+          border-radius: 0px 0px 33px 40px;
+          height: 50vh;
+          /* width: 25rem; */
+          top: -1rem;
+          right: 0rem;
+      }
+
+      .summary-container {
+          width: 24rem;
+          box-shadow: none;
+      }
+      
+      button {
+          padding: 0.85rem;
+      }
+}

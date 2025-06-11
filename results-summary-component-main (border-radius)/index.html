@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <script src="./index.js"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Results summary component</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <section class="main-container">
+        <div class="summary-component">
+          <div class="results-container">
+            <h1>Your Result</h1>
+            <span class="circle">
+              <span class="num">76</span>
+              <p>of 100</p>
+            </span>
+            <div class="results-comment">
+              <h2>Great</h2>
+              <p>
+                You scored higher than 65% of the people who have taken these
+                tests.
+              </p>
+            </div>
+          </div>
+          <div class="summary-container">
+            <h3>Summary</h3>
+            <!--imported from dat.json file-->
+            <div class="summary-items">
+              <div class="summary-rating red-bg">
+                <div class="item">
+                  <img src="./assets/images/icon-reaction.svg" alt="" />
+                  <span class="react">Reaction</span>
+                </div>
+                <p>80 <span class="rate">/ 100</span></p>
+              </div>
+              <div class="summary-rating orange-bg">
+                <div class="item">
+                  <img src="./assets/images/icon-memory.svg" alt="" />
+                  <span class="memory">Memory</span>
+                </div>
+                <p>92 <span class="rate">/ 100</span></p>
+              </div>
+              <div class="summary-rating green-bg">
+                <div class="item">
+                  <img src="./assets/images/icon-verbal.svg" alt="" />
+                  <span class="verb">Verbal</span>
+                </div>
+                <p>61 <span class="rate">/ 100</span></p>
+              </div>
+              <div class="summary-rating blue-bg">
+                <div class="item">
+                  <img src="./assets/images/icon-visual.svg" alt="" />
+                  <span class="visual">Visual </span>
+                </div>
+                <p>72 <span class="rate">/ 100</span></p>
+              </div>
+            </div>
+            <button>Continue</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lee Cooper</a>.
+    </div> -->
+  </body>
+</html>

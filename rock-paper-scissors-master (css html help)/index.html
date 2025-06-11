@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <!--Rule for the game-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
+      <div class="main-container">
+        <div class="score-card">
+          <nav>
+            <ul>
+              <li>ROCK</li>
+              <li>PAPER</li>
+              <li>SCISSORS</li>
+            </ul>
+          </nav>
+          <div class="score-tracker">
+            <p>Score</p>
+            <span class="score" id="score">0</span>
+          </div>
+        </div>
+        <!-- seperate containers for each page that both display none and block -->
+        <!-- start game is the page where the user is able to make a choice and only moves to the next page once the user actually clicks on their choice -->
+        <!-- 
+        <div class="start-game">
+          <img src="./images/bg-triangle.svg" alt="" />
+          <div class="icon-top">
+            <img src="./images/icon-rock.svg" alt="" />
+            <img src="./images/icon-paper.svg" alt="" />
+          </div>
+          <div class="icon-bottom">
+            <img src="./images/icon-scissors.svg" alt="" />
+          </div>
+        </div> -->
+        <div class="game-container">
+          <div class="results">
+            <div id="you-picked"></div>
+            <div id="result"></div>
+            <div id="computer-picked"></div>
+          </div>
+          <div class="user-choice">
+            <h2>You chose</h2>
+            <!-- <img src="./images/icon-scissors.svg" alt="" /> -->
+            <div class="game-choice">
+              <button onclick="userChoice(0)">rock</button>
+              <button onclick="userChoice(1)">paper</button>
+            </div>
+            <div class="">
+              <button onclick="userChoice(2)">scissors</button>
+            </div>
+          </div>
+          <!-- <div class="computer-choice">
+            <h2>The House Picked</h2>
+          </div> -->
+        </div>
+      </div>
+      <div class="rules">
+        <button id="myBtn">Rules</button>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>RULES</h3>
+          <div class="modal-rules">
+            <img src="./images/image-rules.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lee </a>.
+  </div> -->
+  </body>
+  <script src="./index.js"></script>
+</html>
