@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+        <div class="launching-container">
+          <h1>PING.</h1>
+          <div class="bottom-text">
+            <span class="text"
+              >We asre launching <span class="bold">soon!</span></span
+            >
+            <p>Subscribe and get notified</p>
+          </div>
+          <!-- cannot get the input and notify button to extend the full width of the container -->
+          <div class="notify-email">
+            <div class="inputAndError">
+              <input
+                class="email"
+                type="text"
+                placeholder="example@email.com"
+                id="mail"
+              />
+              <button onclick="notify()">Notify Me</button>
+            </div>
+            <p id="error" class="error">Please Provide a Valid Email Adress</p>
+          </div>
+          <div class="charts-container"></div>
+          <div class="social-container">
+            <ion-icon name="logo-facebook" class="icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="icon"></ion-icon>
+          </div>
+          <div class="copy-right">
+            &copy; Copyright Ping. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Lee Cooper</a>.
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

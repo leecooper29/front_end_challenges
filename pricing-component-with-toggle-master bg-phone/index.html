@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | [Pricing Compoment with toggle]</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="toggle-container">
+        <h1>Our Pricing</h1>
+        <div class="switch-toggle">
+          <span>Annually</span>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round" id="switch"></span>
+          </label>
+          <span>Monthly</span>
+        </div>
+      </div>
+      <div class="pricing-grid">
+        <div class="option-item option-item-light">
+          <h2>Basic</h2>
+          <div class="service-price">
+            <span class="dollar">&dollar;</span>
+            <span class="annually" id="basicPrice"></span>
+          </div>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3 GB</p>
+          <hr />
+          <button id="basicPrice-learnmore" class="white-bg">LEARN MORE</button>
+        </div>
+        <div class="option-item option-item-dark">
+          <h3>Professional</h3>
+          <div class="service-price">
+            <span class="dollar light">&dollar;</span>
+            <span class="annually" id="professionalPrice"></span>
+          </div>
+          <hr />
+          <p>1 TB Storage</p>
+          <hr />
+          <p>5 Users Allowed</p>
+          <hr />
+          <p>Send up to 10 GB</p>
+          <hr />
+          <button class="option-btn" id="professionalPrice-learnmore">
+            LEARN MORE
+          </button>
+        </div>
+        <div class="option-item option-item-light border-radius-reverse">
+          <h2>Master</h2>
+          <div class="service-price">
+            <span class="dollar">&dollar;</span>
+            <span class="annually" id="masterPrice"></span>
+          </div>
+          <hr />
+          <p>2 TB Storage</p>
+          <hr />
+          <p>10 Users Allowed</p>
+          <hr />
+          <p>Send up to 20 GB</p>
+          <hr />
+          <button id="masterPrice-learnmore" class="white-bg">
+            LEARN MORE
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Lee Cooper</a>.
+    </div> -->
+  </body>
+</html>

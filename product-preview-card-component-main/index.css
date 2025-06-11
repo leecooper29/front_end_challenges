@@ -1,0 +1,127 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 14px;
+      height: 100vh;
+}
+
+.main-contents {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 0 5rem;
+      background-color: hsl(30, 38%, 92%);
+}
+
+.product-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1rem;
+      max-width: 35rem;
+
+}
+
+h2 {
+      font-family: "Fraunces", serif;
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 1rem;
+}
+
+h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.30rem;
+}
+
+.card-left {      
+      background-image: url(./images/image-product-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      border-radius: 8px 0 0 8px;
+}
+
+.card-right {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      min-height: 100%;
+      padding: 1rem;
+      border-radius: 0 8px 8px 0;
+}
+
+.card-right > p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 1rem;
+}
+
+.price-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 1.5rem;
+}
+
+.price-container > p {
+      text-decoration: line-through;
+}
+
+.price {
+      font-family: "Fraunces", serif;
+      color: hsl(158, 36%, 37%);
+      font-size: 30px;
+      font-weight: 700;
+      padding-right: 1rem;
+}
+
+button.cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(158, 36%, 37%);
+      border-radius: 5px;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+}
+
+
+button.cart img {
+      padding-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 375px) {
+
+            .main-contents {
+                  padding: 0;
+            }
+
+            .product-card {
+                  grid-template-columns: 1fr;
+            }
+
+            .card-left {
+                  background-position: 0px -130px;
+                  background-size: 100%;
+                  min-height: 15rem;
+                  border-radius: 8px 8px 0 0;
+            }
+
+            .card-right {
+                  border-radius: 0 0 8px 8px;
+            }
+
+            
+}

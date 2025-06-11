@@ -1,0 +1,142 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+body {
+      font-size: 20px;
+      font-family: "Libre Franklin", sans-serif;
+      font-optical-sizing: auto;
+}
+ 
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+h1 {
+      margin-bottom: 3rem;
+      font-size: 18px;
+}
+
+.main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+
+.launching-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      max-width: 600px;
+      margin-top: 1rem;
+}
+
+.notify-email {
+      display: grid;
+      justify-content: space-between;
+      min-width: 100%;
+}
+
+.text {
+      font-size: 40px;
+      margin-bottom: 1rem;
+      font-weight: 200;
+}
+
+.bold {
+      font-weight: bold;
+}
+
+.bottom-text p {
+      padding: 1rem 0 2rem 0;
+      font-size: 18px;
+}
+
+input {
+      border-radius: 15px;
+      padding: .5rem;
+      /* width: 70%; */
+}
+
+.email {
+      width: 20rem;
+}
+
+.error{
+      display: none;
+      font-size: 10px;
+      color: red;
+      margin-top: 0.5rem;
+      text-align: left;
+}
+
+button {
+      background-color: hsl(223, 87%, 63%);
+      color: white;
+      border: none;
+      padding: 0.5rem 2rem;
+      border-radius: 15px;
+}
+
+.charts-container {
+      display: flex;
+      flex-direction: column;
+      background-image: url(./images/illustration-dashboard.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin-top: 3rem;
+      height: 40vh;
+}
+
+.icon {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 1rem;
+}
+
+.copy-right {
+      font-size: 14px;
+}
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+}
+
+.attribution a {
+      color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+      .main-container {
+            margin-left: 1rem;
+            margin-right: 1rem;
+      }
+
+      .text {
+            font-size: 25px;
+            width: 400px;
+      }
+
+      .bottom-text > p {
+            font-size: 16px;
+      }
+
+      
+
+      .email {
+            width: 100%;
+      }
+      
+      button {
+            width: 100%;
+            margin-top: 1rem;
+      }
+}
