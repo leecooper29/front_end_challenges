@@ -1,0 +1,157 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+}
+
+body {
+      font-size: 32px;
+      height: 100vh;
+      background-color: hsl(0, 0%, 94%);
+      font-family: "Poppins", sans-serif;
+      /* font-weight: 100; */
+}
+
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+}
+
+h1 {
+      font-size: 16px;
+      color: hsl(0, 1%, 44%);
+      font-weight: 400i;
+}
+
+.age-calc-container {
+      display: flex;
+      flex-direction: column;
+      width: 36rem;
+      padding: 2rem;
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 15px 15px 100px 15px;
+}
+
+.birth-inputs {
+      display: flex;
+}
+
+.input-item {
+      margin-right: 1rem;
+      font-weight: bold;
+}
+
+.result {
+
+}
+
+.result-arrow {
+      display: flex;
+      justify-content: end;
+      border-bottom:  1px solid grey;
+}
+
+button {
+      padding: 1rem;
+      border: none;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      position: relative;
+      top: 2rem;
+      background-image: url(./assets/images/icon-arrow.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color:  hsl(259, 100%, 65%);
+}
+
+button:hover {
+      background-color: black;
+}
+
+.extend {
+      width: 30rem;
+      color:  hsl(0, 0%, 86%);
+}
+
+input {
+      padding: 0.3rem;
+      max-width: 6rem;   
+      border-radius: 5px;
+      font-size: 20px;   
+      border:  1px solid hsl(0, 0%, 86%);
+}
+
+/* .error {
+      color: red;
+} */
+
+.error-day {
+      font-size: 10px;
+      color:  hsl(0, 100%, 67%);
+      padding-top: 0.5rem;
+}
+
+.error-month {
+      font-size: 10px;
+      color:  hsl(0, 100%, 67%);
+      padding-top: 0.5rem;
+}
+
+.error-year {
+      font-size: 10px;
+      color:  hsl(0, 100%, 67%);
+      padding-top: 0.5rem;
+      
+}
+
+
+input:hover {
+      border: 1px solid hsl(259, 100%, 65%);
+}
+
+.value-items {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+}
+
+.exbold-italic {
+      font-weight: 800;
+      font-size: 55px;
+}
+
+.age-result {
+      display: flex;
+      align-items: center;
+      height: 8vh;
+}
+
+.result {
+      font-size: 4rem;
+      color: hsl(259, 100%, 65%);
+      margin-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 375px) {
+      
+      body {
+            margin: 1rem;
+      }
+
+      .age-calc-container {
+            padding: 1rem;
+            width: 22rem;
+      }
+
+      .result-arrow {
+            justify-content: center;
+            margin-bottom: 2rem;
+      }
+}
