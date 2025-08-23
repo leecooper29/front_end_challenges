@@ -4,7 +4,6 @@ function handleUrl() {
   const errormessage = document.getElementById("errorMessage");
   const urlContent = document.getElementById("url-content");
   const list = document.getElementById("url-list");
-
   console.log("url-list:", list);
 
   if (url === "") {
@@ -17,26 +16,25 @@ function handleUrl() {
     urlContent.classList.remove("hide");
   }
   // is there anything else that I can use at the end of the shortened url besides ...
+  // ternary operator is useful for certain if else clauses
   const shortenedUrl = url.length > 20 ? url.slice(0, 20) + "..." : url;
   console.log("Shortened URL:", shortenedUrl);
-
   const li = document.createElement("li");
   li.innerHTML = `
         <span class="url-text">${shortenedUrl}</span>
         <button class="copy-btn">Copy</button>
     `;
-
   li.querySelector(".copy-btn").addEventListener("click", function () {
     navigator.clipboard
       .writeText(url)
       .then(() => {
         console.log("URL copied to clipboard", shortenedUrl);
+        alert("url copied to clipboard");
       })
       .catch((err) => {
         console.error("Failed to copy URL", err);
       });
   });
-
   list.appendChild(li);
   input.value = "";
 }
